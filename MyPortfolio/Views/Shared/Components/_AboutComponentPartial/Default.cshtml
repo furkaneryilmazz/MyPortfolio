@@ -1,0 +1,55 @@
+﻿@model List<MyPortfolio.DAL.Entities.About>
+
+<section id="about" class="s-about target-section">
+
+
+
+    <div class="row narrow section-intro has-bottom-sep">
+        <div class="card" style="width: 36rem; margin-left:230px">
+            <img class="card-img-top" src="https://i.hizliresim.com/c5jaoqg.png" alt="Card image cap">
+        </div>
+        <br />
+        <div class="col-full text-center">
+            <h3>Hakkımda</h3>
+            <h1>@ViewBag.aboutTitle</h1>
+            <p class="lead">@ViewBag.aboutSubDescription</p>
+        </div>
+    </div>
+
+
+
+    <div class="row about-content">
+
+        <div class="col-six tab-full left">
+            <h3>Ben Kimim!</h3>
+            <p>@ViewBag.aboutDetail</p>
+        </div>
+        
+        @await Component.InvokeAsync("_SkillComponentPartial")
+        
+
+    </div> <!-- end about-content -->
+
+    <div class="row about-content about-content--buttons">
+
+        <div class="col-six tab-full left">
+            <a href="https://drive.google.com/file/d/1RDQqLhNQQBbaSPMbCtf_vw14atE0ADl4/view?usp=sharing" class="btn btn--primary full-width">Cv'mi İndir</a>
+        </div>
+        <div class="col-six tab-full right">
+            <a href="#" class="btn full-width" onclick="redirectToMail()">Bana Yazın</a>
+        </div>
+
+    </div> <!-- end about-content buttons -->
+
+    @await Component.InvokeAsync("_ExperienceComponentPartial")
+    
+    <!-- end about-content timeline -->
+
+    <script>
+        function redirectToMail() {
+            // Mailto linkine tıklandığında, kullanıcıyı mail atma sayfasına yönlendirin
+            window.location.href = "mailto:81eryilmaz81@gmail.com";
+        }
+    </script>
+
+</section>
