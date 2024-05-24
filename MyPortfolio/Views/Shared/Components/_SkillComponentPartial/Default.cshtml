@@ -1,14 +1,18 @@
 ﻿@model List<MyPortfolio.DAL.Entities.Skill>
 
+    @{
+        int x = 0;
+    }
 
 
 <div class="col-six tab-full right">
     <h3>Programlama Dilleri & Teknolojiler</h3>
     @foreach (var item in Model)
     {
+        x = item.Value;
         <ul class="skill-bars">
             <li>
-                <div class="progress percent @item.Value"><span>@item.Value%</span></div>
+                <div class="progress percent" style="width:@item.Value%" ><span>@item.Value%</span></div>
                 <strong>@item.Title</strong>
             </li>
         </ul>
