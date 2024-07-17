@@ -5,7 +5,7 @@ using MyPortfolio.DAL.Entities;
 
 namespace MyPortfolio.Controllers
 {
-    [Authorize]
+    
     public class ExperienceController : Controller
     {
         MyPortfolioContext context = new MyPortfolioContext();

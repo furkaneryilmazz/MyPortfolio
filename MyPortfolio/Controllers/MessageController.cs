@@ -5,7 +5,6 @@ using MyPortfolio.DAL.Entities;
 
 namespace MyPortfolio.Controllers
 {
-    [Authorize]
     public class MessageController : Controller
 	{
 		MyPortfolioContext context = new MyPortfolioContext();

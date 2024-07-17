@@ -4,8 +4,7 @@ using MyPortfolio.DAL.Context;
 
 namespace MyPortfolio.Controllers
 {
-    [Authorize]
-    public class StatisticController : Controller
+	public class StatisticController : Controller
 	{
 		MyPortfolioContext context = new MyPortfolioContext();
 		public IActionResult Index()
