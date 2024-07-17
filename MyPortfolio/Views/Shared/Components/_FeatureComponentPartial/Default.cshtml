@@ -1,7 +1,19 @@
 ﻿@model List<MyPortfolio.DAL.Entities.Feature>
 
+<style>
+    .main-h1 h1 {
+        font-family: "montserrat-semibold", sans-serif;
+        font-size: 3rem; /* Font boyutunu artırdık */
+        color: #862121;
+        text-transform: uppercase;
+        letter-spacing: .15rem;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+</style>
 
-<section id="home" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="https://i.hizliresim.com/5s0sygg.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+
+<section id="home" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="https://i.hizliresim.com/kg3w8de.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
 
     <div class="overlay"></div>
     <div class="shadow-overlay"></div>
@@ -12,7 +24,10 @@
 
             <div class="row home-content__main">
 
-                <h3>@item.Title</h3>
+                <div class="main-h1">
+                    <h1>@item.Title</h1>
+                </div>
+                @* <h1>@item.Title</h1> *@
 
                 <h1>
                     @* I am Jonathan Doe. <br>

@@ -1,9 +1,11 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using MyPortfolio.DAL.Entities;
+using MyPortfolio.Models;
 
 namespace MyPortfolio.DAL.Context
 {
-    public class MyPortfolioContext :DbContext
+    public class MyPortfolioContext : IdentityDbContext<AppUser, AppRole, int>
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
