@@ -4,11 +4,17 @@ Bu proje, ASP.NET Core 6.0 kullanılarak geliştirilmiştir ve veritabanı tablo
 ## Kullanılan Teknolojiler ve Kütüphaneler
 
 ASP.NET Core (6.0)
+
 View Components ile Partial View Kullanımı
+
 Code First Yapısı
+
 Entity Framework
+
 Linq Sorguları
+
 Layout Kontrolü
+
 Identity
 
 ##Projeye Ait Ekran Görüntüleri
